@@ -1,0 +1,54 @@
+html{
+    background-color: rgb(31, 74, 109);
+}
+.table {
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: repeat(9, 1fr);
+    min-height: 500px;
+    justify-content: center;
+    margin-left: 5vw;
+    margin-right: 5%;
+    align-items: flex-end;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-content: stretch;
+    background-color: rgb(31, 74, 109);
+}
+
+#elementDisplay{
+    display: block;
+    background-color: rgb(160, 174, 185);
+    height: fit-content;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: rgb(255, 255, 255);
+    margin: 1%;
+}
+
+.transitionMetals {
+    display: flex;
+    flex-direction: row;
+}
+
+.block {
+    background-color: rgb(160, 174, 185);
+    width: 5vw;
+    height: 8vh;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    color: rgb(255, 255, 255);
+    text-align: center;
+    margin: 3px;
+}
+.block:hover {
+    background-color: rgb(255, 221, 67);
+    color: rgb(255, 255, 255);
+}
+.invis {
+    background : 0;
+    width: 5vw;
+    height: 8vh;
+    margin: 3px;
+}
