@@ -1,12 +1,26 @@
-html{
+html {
     background-color: rgb(31, 74, 109);
 }
+
+span {
+    font: 1.3rem Inconsolata, monospace;
+    color: white;
+    margin: 5px;
+    text-shadow: 0 0 3px #a8a8a8;
+}
+::selection {
+    background: white;
+    color: black;
+    text-shadow: none;
+}
+
 .table {
     display: grid;
     flex-direction: row;
     grid-template-columns: repeat(9, 1fr);
     min-height: 500px;
     justify-content: center;
+    margin-top: 2vw;
     margin-left: 5vw;
     margin-right: 5%;
     align-items: flex-end;
@@ -15,17 +29,20 @@ html{
 .column {
     display: flex;
     flex-direction: column;
-    align-content: stretch;
     background-color: rgb(31, 74, 109);
 }
 
-#elementDisplay{
-    display: block;
-    background-color: rgb(160, 174, 185);
-    height: fit-content;
+#elementDisplay {
+    display:flex;
+    height: calc(3*(8vh) + 3*(3px));
+    background-color: rgb(48, 41, 47);
+    background-image: radial-gradient(
+    rgba(0, 60, 0, 0.75), black 120%
+    );
+    border-style: inset;
     font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     color: rgb(255, 255, 255);
-    margin: 1%;
+    margin: 3px;
 }
 
 .transitionMetals {
@@ -37,15 +54,17 @@ html{
     background-color: rgb(160, 174, 185);
     width: 5vw;
     height: 8vh;
-    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    user-select: none;
+    font-size: calc(10px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
     color: rgb(255, 255, 255);
     text-align: center;
     margin: 3px;
 }
 .block:hover {
-    background-color: rgb(255, 221, 67);
+    background-color: rgb(105, 185, 120);
     color: rgb(255, 255, 255);
 }
+
 .invis {
     background : 0;
     width: 5vw;
